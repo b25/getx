@@ -25,3 +25,4 @@ example/android/
 example/ios/
 example/.dart_tool/
 example/.packages
+example/android/local.properties
