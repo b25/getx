@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:get/get.dart';
 import 'package:get/src/instance/get_instance.dart';
 import 'package:get/src/navigation/routes/get_route.dart';
@@ -217,7 +218,7 @@ class GetPlatformApp extends StatelessWidget {
           );
         },
         builder: (_) {
-          return MaterialApp(
+          return PlatformApp(
             key: key,
             navigatorKey:
                 (navigatorKey == null ? Get.key : Get.addKey(navigatorKey)),
@@ -237,16 +238,16 @@ class GetPlatformApp extends StatelessWidget {
             title: title ?? '',
             onGenerateTitle: onGenerateTitle,
             color: color,
-            theme: _.theme ?? theme ?? ThemeData.fallback(),
-            darkTheme: darkTheme,
-            themeMode: _.themeMode ?? themeMode ?? ThemeMode.system,
+            //theme: _.theme ?? theme ?? ThemeData.fallback(),
+            //darkTheme: darkTheme,
+            //themeMode: _.themeMode ?? themeMode ?? ThemeMode.system,
             locale: Get.locale ?? locale,
             localizationsDelegates: localizationsDelegates,
             localeListResolutionCallback: localeListResolutionCallback,
             localeResolutionCallback: localeResolutionCallback,
             supportedLocales:
                 supportedLocales ?? const <Locale>[Locale('en', 'US')],
-            debugShowMaterialGrid: debugShowMaterialGrid ?? false,
+            //debugShowMaterialGrid: debugShowMaterialGrid ?? false,
             showPerformanceOverlay: showPerformanceOverlay ?? false,
             checkerboardRasterCacheImages:
                 checkerboardRasterCacheImages ?? false,

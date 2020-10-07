@@ -9,7 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_platform_widgets:
+    #git:
+    #  url: https://github.com/b25/flutter_platform_widgets.git
+    #  ref: master
+    #use local path
+    path: ../flutter_platform_widgets
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -19,7 +24,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # To add assets to your package, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
@@ -30,7 +34,6 @@ flutter:
   #
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # To add custom fonts to your package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
